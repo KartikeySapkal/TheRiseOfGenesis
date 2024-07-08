@@ -4,6 +4,7 @@ import os
 from flask import Flask, request, jsonify, render_template
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
